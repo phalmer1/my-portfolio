@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 import module from './Nav.module.scss';
 
 
-const Nav = () => {
+const Nav = ({ }) => {
     return (
-        <div className='w-[80%] mx-auto h-full pt-[54px]'>
+        <div className='w-[80%] mx-auto h-full pt-[74px] flex flex-col gap-[20px]'>
             <div className='flex w-full  items-center'>
                 <div className='h-[3px] w-[20vw] bg-red-800'></div>
                 <div className='flex ml-8 w-[10vw] justify-around text-xl '>
@@ -17,18 +17,26 @@ const Nav = () => {
                     <HiEnvelope className='hover:text-white hover:scale-125' />
                 </div>
             </div>
-            <div className={`w-full h-[60%] flex flex-col justify-around text-4xl font-secondary ${module.text}`}>
+            <div className={`w-full h-[60%] flex flex-col justify-around text-6xl font-secondary ${module.text}`}>
                 <span>
-                    <Link to='/'>Home</Link>
+                    <div>
+                        <Link to='/'>Home</Link>
+                    </div>
                 </span>
                 <span>
-                    <Link to='/about'>About</Link>
+                    <div>
+                        <Link to='/about'>About</Link>
+                    </div>
                 </span>
                 <span>
-                    <Link to='/work'>Work</Link>
+                    <div>
+                        <Link to='/work'>Work</Link>
+                    </div>
                 </span>
                 <span>
-                    <Link to='/work'>Writing</Link>
+                    <div>
+                        <Link className='' to='/Writing'>Writing</Link>
+                    </div>
                 </span>
             </div>
         </div>

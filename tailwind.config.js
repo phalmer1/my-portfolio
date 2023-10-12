@@ -21,7 +21,7 @@ module.exports = {
       },
       fontFamily: {
         primary: ['"Roboto"', 'sans-serif'],
-        secondary: ['"Roboto Mono"', 'monospace'],
+        secondary: ['"Press Start 2P"', 'cursive'],
       }
 
     },
