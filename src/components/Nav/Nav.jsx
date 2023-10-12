@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import module from './Nav.module.scss';
 
 
-const Nav = ({ }) => {
+const Nav = () => {
     return (
         <div className='w-[80%] mx-auto h-full pt-[74px] flex flex-col gap-[20px]'>
             <div className='flex w-full  items-center'>

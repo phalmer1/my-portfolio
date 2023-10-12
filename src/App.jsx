@@ -1,9 +1,9 @@
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Home from './components/Pages/Home';
 import About from './components/Pages/About';
 import Work from './components/Pages/Work';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 function App() {

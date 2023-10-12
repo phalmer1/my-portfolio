@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Modal from '../UI/Modal';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { BiLogoInstagram } from 'react-icons/bi';
 import { AiFillGithub } from 'react-icons/ai';

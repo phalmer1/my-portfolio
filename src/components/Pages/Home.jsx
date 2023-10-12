@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import LayOut from '../LayOut/LayOut';
 import { motion } from 'framer-motion';
-
 const Home = () => {
+
+
 
 
     return (
@@ -19,8 +20,12 @@ const Home = () => {
                         whileInView={{ opacity: 1 }}
                         className='bg-slate-600 h-[80vh]'
                     >
-                        <motion.div className='bg-slate-400 w-[30%] h-[70%]'>
-                            <motion.img src='.' alt=''/>
+                        <motion.div
+                            className='bg-slate-400 w-[30%] h-[70%]'
+                            initial={{ height: '0', opacity: 0 }}
+                            transition={{ duration: 0.7 }}
+                        >
+                            
                         </motion.div>
                     </motion.div>
                     <motion.div
