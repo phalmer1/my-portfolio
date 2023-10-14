@@ -4,7 +4,7 @@ import LayOut from '../LayOut/LayOut';
 const About = () => {
     return (
         <div>
-            <LayOut backGround='bg-blue-300'>
+            <LayOut backGround='bg-blue-200'>
                 <div className='pt-[54px]'>
                     some content
                 </div>

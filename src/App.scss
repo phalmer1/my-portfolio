@@ -1,7 +1,13 @@
 html,body,div{
   margin: 0;
   padding: 0;
+  box-sizing: content-box; 
   @apply font-secondary text-black;
+}
+
+#root{
+  height: 100%;
+  
 }
 
 $color_primary: #829268;
@@ -16,9 +22,7 @@ $color_active: #f5c430;
   display: none;
 }
 
-html, body{ 
-  box-sizing: content-box; 
-  width: 100%;
+ body{ 
   height: 100%;
   
 } 
@@ -64,3 +68,4 @@ body:after, body:before {
 *, :after, :before { 
   box-sizing: border-box; 
 }
+

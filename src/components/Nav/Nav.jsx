@@ -9,9 +9,9 @@ import module from './Nav.module.scss';
 const Nav = () => {
     return (
         <div className='w-[80%] mx-auto h-full pt-[74px] flex flex-col gap-[20px]'>
-            <div className='flex w-full  items-center'>
-                <div className='h-[3px] w-[20vw] bg-red-800'></div>
-                <div className='flex ml-8 w-[10vw] justify-around text-xl '>
+            <div className='flex w-full mt-[10vh] justify-between items-center'>
+                <div className='h-[3px] w-[30vw] bg-red-800'></div>
+                <div className='flex ml-8 w-[30vw] justify-around items-center sm:text-xl md:text-2xl'>
                     <BiLogoInstagram className='hover:text-white hover:scale-125' />
                     <AiFillGithub className='hover:text-white hover:scale-125' />
                     <HiEnvelope className='hover:text-white hover:scale-125' />
@@ -35,7 +35,7 @@ const Nav = () => {
                 </span>
                 <span>
                     <div>
-                        <Link className='' to='/Writing'>Writing</Link>
+                        <Link to='/contactme'>COntact me</Link>
                     </div>
                 </span>
             </div>
