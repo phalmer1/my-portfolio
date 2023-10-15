@@ -24,8 +24,8 @@ const Home = () => {
                         <AnimatedImage image={images[5]} imagePosition={'justify-end'} />
                         <AnimatedImage image={images[1]} imagePosition={'justify-start'} />
                     </motion.div>
-                    <motion.div className='w-full h-[80vh] bg-slate-500'>
-
+                    <motion.div className='w-full h-[80vh] bg-slate-500 flex items-center'>
+                        <p className='md:text-3xl sm:text-lg text-center w-full'>and here too</p>
                     </motion.div>
                 </motion.div>
             </LayOut>

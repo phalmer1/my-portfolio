@@ -1,26 +1,30 @@
 import React from 'react';
 import LayOut from '../LayOut/LayOut';
 import module from './contactMe.module.scss';
+import { images } from '../../images/images'
+import { motion } from 'framer-motion';
 
 const ContactMe = () => {
     return (
         <LayOut backGround='bg-amber-100'>
-            <div className={`${module.container} w-1/2 mx-auto flex`}>
 
-                <div className='w-1/2 bg-black h-4/5'></div>
-                <form className={`${module.form} w-1/2  flex flex-col justify-around items-center bg-slate-600 py-[5vh] shadow-xl`}>
-                    <div className='w-[80%] sm:text-lg md:text-2xl mb-[2vh] flex '>
-                        <h1 className='text-white transition-all'>Send me something</h1>
+            <div className='w-[80vw] mx-auto xs:h-[60vh] md:h-[80vh] flex rounded-lg shadow-lg'>
+                <form action="" className={module.form}>
+                    <div className={module.input__container}>
+                        <input type="text" placeholder='Email' className={module.input} />
                     </div>
-
-                    <div className='w-full flex justify-center'>
-                        <input type="text" placeholder='Your Name' className= {`${module.input} transition-all shadow-slate-500 shadow-md focus:border-white border-slate-600 border-b-2 rounded-md outline-0 p-[5%] bg-slate-600`} />
+                    <div>
+                        <textarea name="" placeholder='Message' className={module.textarea}></textarea>
                     </div>
-                    <div className='w-full flex justify-center'>
-                        <input type="text" placeholder='Your Email' className= {`${module.input} transition-all shadow-slate-500 shadow-md focus:border-white border-slate-600 border-b-2 rounded-md outline-0 p-[5%] bg-slate-600`} />
+                    <div className='flex w-full justify-start h-[10%]'>
+                        <button className={module.btn}>Send</button>
                     </div>
-                    <button onClick={() => { console.log('hello') }} className='text-white bg-slate-700 py-[3%] p-[10%] rounded-xl shadow-lg'>Send</button>
                 </form>
+                <div className='md:w-1/2 md:block hidden bg-slate-300 '>
+                    <div className=' h-[80vh] bg-slate-500 flex items-center'>
+                        <p className='md:text-3xl text-center '>your advertisement could be here</p>
+                    </div>
+                </div>
             </div>
         </LayOut>
     );

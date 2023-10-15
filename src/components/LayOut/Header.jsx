@@ -57,13 +57,13 @@ const Header = ({ backGround }) => {
 
     return (
         <>
-            <header className='flex w-full p-[5vh] fixed z-[10000] bg-slate-200'>
+            <header className='flex w-full left-0 p-[5vh] fixed z-[10000] '>
                     {!isNavOpen ?
                         <Modal
                             className={`w-screen h-screen fixed top-0 left-0 ${bg}`}
                             initial={{ height: '100vh', y: 0 }}
-                            animate={closeNavAnime === false ? { height: '100vh', y: -1000 } : { height: '100vh', y: 1000 }}
-                            transition={{ delay: 0.8, duration: 0.7 }}
+                            animate={closeNavAnime === false ? { height: '100vh', y: -2000 } : { height: '100vh', y: 2000 }}
+                            transition={{ delay: 0.8, duration: 1 }}
 
                         >
                             <Nav />

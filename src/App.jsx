@@ -17,7 +17,7 @@ function App() {
 
 
   return (
-    <div className="bg-slate-200 px-[2vw] py-[1vh] h-full">
+    <div className="bg-slate-200 h-screen">
       <motion.div
         className={`w-screen h-screen  z-[3000000] top-0 left-0 fixed bg-black ${hidden}`}
         initial={{ height: '100vh' ,width: '100vw' }}

@@ -1,10 +1,25 @@
 .container{
-    @apply xl:w-[60%] xl:h-[74vh] lg:h-[62vh] sm:w-[80%] md:w-[60%] sm:h-full md:h-[75vh];
+    // @apply xl:w-[60%] xl:h-[74vh] lg:h-[62vh] sm:w-[80%] md:w-[60%] sm:h-full md:h-[75vh];
 }
 .form{
-    @apply xl:h-[80%] lg:h-[100%]; 
+    @apply xs:w-full md:w-1/2 h-full flex flex-col justify-between bg-slate-100 py-[3%] px-[5%]; 
 }
+
+
+.input__container{
+    @apply w-[100%] flex flex-col justify-center;
+}
+
 .input{
-    @apply xl:w-[80%] xl:h-[70%] lg:w-[80%] lg:h-[60%];
+    @apply w-full h-[100%] transition-all focus:border-slate-600 
+    border-slate-100 border-b-2 rounded-md outline-0 p-[5%] bg-slate-100 font-serif;
     box-sizing: border-box;
+}
+
+.textarea{
+    @apply h-[100%] xs:max-h-[100px] md:max-h-[200px] md:min-h-[200px] w-[100%] focus:border-slate-600 
+    border-slate-100 border-b-2 rounded-md outline-0 p-[5%] bg-slate-100 items-start font-serif;
+}
+.btn{
+    @apply w-[30%] bg-slate-500 rounded-lg font-serif;
 }
